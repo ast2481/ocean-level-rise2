@@ -2,7 +2,7 @@
 //
 
 #include <iostream>
-
+using namespace std;
 int main()
 {
     double risePerYear = 1.5;
@@ -11,10 +11,14 @@ int main()
     int levelyear7 = 7;
     int levelyear10 = 10;
         
-    double rise5 = 1.5 * Levelyear5;
-    double rise7 = 1.5 * levelyear7;
-    double rise10 = 1.5 * levelyear10;
+    double rise5 = risePerYear * Levelyear5;
+    double rise7 = risePerYear * levelyear7;
+    double rise10 = risePerYear * levelyear10;
 
-   cout <<   
+    cout << "Rise in 5 years:"  << rise5 << endl;
+    cout << "Rise in 7 years:"  << rise7 << endl;
+    cout << "Rise in 10 years:" << rise10 << endl;
+
+    return 0;
 }
 
